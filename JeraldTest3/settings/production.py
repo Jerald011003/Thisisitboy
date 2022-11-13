@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'accounts',
     'django_filters',
+    'storages'
 ]
 
 
@@ -134,14 +135,15 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [BASE_DIR / "static_my_project", ]
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "static_root")
+STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn", "static_root")
 
 MEDIA_URL = 'media/'
 
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn", "media_root")
+MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
+from JeraldTest3.aws.conf import *
 
 CORS_REPLACE_HTTPS_REFERER      = True
 HOST_SCHEME                     = "https://"

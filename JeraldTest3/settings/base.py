@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'accounts',
     'django_filters',
+    'storages'
 ]
 
 
@@ -151,3 +152,8 @@ CSRF_COOKIE_SECURE              = False
 SECURE_HSTS_SECONDS             = None
 SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
 SECURE_FRAME_DENY               = False
+
+AWS_GROUP_NAME = "CPE_User_Group"
+AWS_USERNAME = "cloudannex"
+AWS_ACCESS_KEY_ID = "AKIAWXIWGUHSBDQDB3VN"
+AWS_SECRET_KEY = "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"
