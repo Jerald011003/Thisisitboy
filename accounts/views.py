@@ -21,7 +21,7 @@ from .forms import *
 def registerPage(request):
         form = UserCreationForm()
         context = {'form': form}
-        return render(request, 'auth/register.html', context)
+        return render(request, 'register.html', context)
 
 
 def loginPage2(request):
@@ -38,7 +38,7 @@ def loginPage2(request):
                 messages.info(request, 'Username OR password is incorrect')
 
         context = {}
-        return render(request, 'auth/loginpage.html', context)
+        return render(request, 'loginpage.html', context)
 
 
 def logoutUser(request):

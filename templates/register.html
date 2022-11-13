@@ -1,7 +1,8 @@
-<h3>Register</h3>
+
+<h2>Register</h2>
 
 <form method="POST" action="">
-    {% csrf_token %}
-{{ form.as_p }}
-    <input type="submit" name="Create User">
+  {% csrf_token %}
+  {{form}}
+  <input type="submit" name="Create User">
 </form>
